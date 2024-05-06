@@ -2,11 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Photo Mosaic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photomosaic Creator - Create photomosaic art from an image</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="file" id="upload" accept="image/*">
-    <canvas id="canvas"></canvas>
+    <header>
+        <h1>Photomosaic Creator</h1>
+        <p>Photomosaics combine small, regular-sized images to form a larger composite image. This page demonstrates a simple JavaScript implementation of creating photomosaics.</p>
+    </header>
+    
+    <main>
+        <section id="upload-area">
+            <div style="display: flex; align-items: center; vertical-align: center;">
+                <h2 style="margin-right: 10px;">Upload Your Image</h2>
+                <input type="file" id="upload" accept="image/*">
+            </div>
+            <canvas id="canvas"></canvas>
+        </section>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <div class="example" style="display: flex; align-content: center;">
+                <img src="Starry-Night-Vincent-van-Gogh-New-1889.webp" alt="Starry Night">
+                <img src="Example1.png" alt="Starry Night Photomosaic">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <img src="github-icon.png" style="height: 20px;">
+            <a href="https://github.com/tracywong117/Photomosaic-js"> 
+                GitHub
+            </a>
+        </p>
+        <p>© 2024 Photomosaic. All rights reserved.</p>
+    </footer>
+    
     <script src="photomosaic.js"></script>
 </body>
 </html>

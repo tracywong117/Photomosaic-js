@@ -1,0 +1,88 @@
+/* Basic reset */
+body, h1, h2, p, input, canvas {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    
+    background-color: #2A5298;
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    margin: 0;
+    padding: 75px 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    /* padding: 20px; */
+}
+
+main, footer {
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #e1cbf0;
+}
+
+p {
+    color: #bfadcb;
+    /* color: #7a6bac; */
+    margin-top: 10px;
+}
+
+#upload-area {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+canvas {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 20px auto;
+}
+
+#examples {
+    margin-top: 30px;
+}
+
+.example {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.example img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 0.8em;
+    color: #666;
+}
