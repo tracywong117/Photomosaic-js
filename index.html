@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photomosaic Creator - Create photomosaic art from an image</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <header>
+    <header class="EB_Garamond_600">
         <h1>Photomosaic Creator</h1>
-        <p>Photomosaics combine small, regular-sized images to form a larger composite image. This page demonstrates a simple JavaScript implementation of creating photomosaics.</p>
+        <p style="font-size: 18px;">Photomosaics combine small, regular-sized images to form a larger composite image.
+            This page demonstrates a
+            simple JavaScript implementation of creating photomosaics.</p>
     </header>
-    
-    <main>
-        <section id="upload-area">
-            <div style="display: flex; align-items: center; vertical-align: center;">
+
+    <main class="EB_Garamond_400">
+        <section style="text-align: center; margin-top: 20px;">
+            <div>
                 <h2 style="margin-right: 10px;">Upload Your Image</h2>
                 <input type="file" id="upload" accept="image/*">
             </div>
@@ -23,9 +35,10 @@
 
         <section id="examples">
             <h2>Examples</h2>
-            <div class="example" style="display: flex; align-content: center;">
-                <img src="Starry-Night-Vincent-van-Gogh-New-1889.webp" alt="Starry Night">
+            <div class="example">
+                <!-- <img src="Starry-Night-Vincent-van-Gogh-New-1889.webp" alt="Starry Night"> -->
                 <img src="Example1.png" alt="Starry Night Photomosaic">
+                <p>Starry Night</p>
             </div>
         </section>
     </main>
@@ -33,13 +46,14 @@
     <footer>
         <p>
             <img src="github-icon.png" style="height: 20px;">
-            <a href="https://github.com/tracywong117/Photomosaic-js"> 
+            <a href="https://github.com/tracywong117/Photomosaic-js">
                 GitHub
             </a>
         </p>
         <p>© 2024 Photomosaic. All rights reserved.</p>
     </footer>
-    
+
     <script src="photomosaic.js"></script>
 </body>
+
 </html>

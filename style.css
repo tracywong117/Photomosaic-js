@@ -1,37 +1,56 @@
-/* Basic reset */
-body, h1, h2, p, input, canvas {
+body,
+h1,
+h2,
+p,
+input,
+canvas {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
+.EB_Garamond_600 {
+    font-family: "EB Garamond", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.EB_Garamond_400 {
+    font-family: "EB Garamond", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+}
+
+
 header {
-    
     background-color: #2A5298;
-    /* width: 100%; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     text-align: center;
     margin: 0;
-    padding: 75px 0;
+    padding: 75px 20px;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f9;
-    /* padding: 20px; */
 }
 
-main, footer {
+main,
+footer {
     max-width: 960px;
     margin: 20px auto;
 }
 
 h1 {
     color: #e1cbf0;
+    font-size: 36px;
+}
+
+h2 {
+    color: #3960a4;
+    font-weight: 500;
 }
 
 p {
@@ -40,15 +59,32 @@ p {
     margin-top: 10px;
 }
 
-#upload-area {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    align-content: center;
-}
-
 input[type="file"] {
     margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
 }
 
 canvas {
@@ -61,22 +97,30 @@ canvas {
 }
 
 #examples {
-    margin-top: 30px;
+    margin: 30px;
 }
 
 .example {
     margin-bottom: 20px;
     background-color: #fff;
-    padding: 10px;
     border: 1px solid #ddd;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    flex-direction: column;
+    height: 100%;
+    /* Adjust based on your needs */
+    padding: 30px;
 }
 
 .example img {
-    width: 100%;
-    max-width: 300px;
     height: auto;
-    margin: 0 auto;
-    display: block;
+    width: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
